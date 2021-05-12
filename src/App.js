@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'; // css
+import Header from './components/Header';
+import Footer from './components/Footer';
 
+// App Component
+// Ideal place for you to setup the layout
 function App() {
+
+  // Returing JSX
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header></Header>
+
+      <div className="mt-5">
+        <h1>Success!</h1>
+      </div>
+
+      <Footer />
     </div>
   );
 }
