@@ -1,4 +1,5 @@
 import React from 'react';
+import Menu from './Menu';
 
 //  Fn Component with Named Function
 function Header(){
@@ -12,14 +13,7 @@ function Header(){
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
-            <ul className="navbar-nav me-auto mb-2 mb-md-0">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">About</a>
-              </li>
-            </ul>
+            <Menu />
           </div>
         </div>
       </nav>
