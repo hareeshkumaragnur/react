@@ -3,12 +3,15 @@ import Menu from './Menu';
 
 // Fn Component with Anonymous Function
 const Footer = function() {
+
+  const copyrightYear = 2021;
+
   // return JSX 
   return (
-    <footer>
+    <footer className="text-center">
       <hr />
       <Menu />
-      <p>Copyright 2021 | Arun</p>
+      <p>Copyright {copyrightYear} | Arun</p>
     </footer>
   )
 }
