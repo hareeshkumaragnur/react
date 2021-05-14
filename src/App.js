@@ -2,6 +2,8 @@ import './App.css'; // css
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Program from './components/Program';
+import ChannelList from './containers/ChannelList';
+import TrendingShows from './containers/TrendingShows';
 
 // App Component
 // Ideal place for you to setup the layout
@@ -14,7 +16,7 @@ function App() {
 
       <div className="container mt-5">
         <div className="text-left">
-          <h1>Program Component | Props Demo </h1>
+          <h2>Program Component | Props Demo </h2>
           <Program name="Man Vs Wild"
             time="8 PM"
             category="Infotainment">
@@ -28,7 +30,22 @@ function App() {
           </Program>
 
         </div>
+
+        <div>
+          <h2>Channel List Component | Class Comp, State, Events Demo </h2>
+          <ChannelList></ChannelList>
+          <hr />
+        </div>
+
+        <div>
+          <br />
+          <h2>Trending Shows | Lists and Keys, Conditional Rendering, Events, Mutating State obj Immutably </h2>
+          <TrendingShows date="Today"/>
+          
+        </div>
+
       </div>
+
 
       <Footer />
     </div>

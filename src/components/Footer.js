@@ -9,6 +9,7 @@ const Footer = function() {
   // return JSX 
   return (
     <footer className="text-center">
+      { /*my comment */ }
       <hr />
       <Menu />
       <p>Copyright {copyrightYear} | Arun</p>
