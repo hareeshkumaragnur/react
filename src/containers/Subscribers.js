@@ -35,6 +35,10 @@ class Subscribers extends Component {
       .finally(() => {
         console.log('It is over!');
       });
+
+      // Todo:Learn about Fetch
+      // https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
+    
   }
 
   componentDidUpdate() {
