@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Program from './components/Program';
 import ChannelList from './containers/ChannelList';
 import TrendingShows from './containers/TrendingShows';
+import Subscribers from './containers/Subscribers';
 
 // App Component
 // Ideal place for you to setup the layout
@@ -32,7 +33,7 @@ function App() {
         </div>
 
         <div>
-          <h2>Channel List Component | Class Comp, State, Events Demo </h2>
+          <h2 className="greenText">Channel List Component | Class Comp, State, Events Demo </h2>
           <ChannelList></ChannelList>
           <hr />
         </div>
@@ -41,7 +42,12 @@ function App() {
           <br />
           <h2>Trending Shows | Lists and Keys, Conditional Rendering, Events, Mutating State obj Immutably </h2>
           <TrendingShows date="Today"/>
-          
+        </div>
+
+        <div>
+          <br/>
+          <h2>Subscribers | Lifecycle Hooks Demo</h2>
+          <Subscribers />
         </div>
 
       </div>
