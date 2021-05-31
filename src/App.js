@@ -5,6 +5,7 @@ import Program from './components/Program';
 import ChannelList from './containers/ChannelList';
 import TrendingShows from './containers/TrendingShows';
 import Subscribers from './containers/Subscribers';
+import WithLastLogin from './hoc/WithLastLogin';
 
 // App Component
 // Ideal place for you to setup the layout
@@ -50,6 +51,14 @@ function App() {
           <Subscribers />
         </div>
 
+        <div>
+          <br />
+          <h2>Last Login | HOC - Demo</h2>
+          <WithLastLogin>
+            <div>Last Login: yesterday</div>
+            <div>Updated: yesterday </div>
+          </WithLastLogin>
+        </div>
       </div>
 
 
